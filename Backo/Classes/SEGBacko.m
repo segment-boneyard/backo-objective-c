@@ -30,6 +30,11 @@
     return [[self alloc] initWithBuilder:[SEGBackoBuilder builderWithBlock:block]];
 }
 
++ (instancetype)create; {
+    return [[self alloc] initWithBuilder:[SEGBackoBuilder builderWithBlock:^(SEGBackoBuilder *configuration) {
+    }]];
+}
+
 - (id)initWithBuilder:(SEGBackoBuilder *)builder; {
     self = [super init];
 
@@ -42,7 +47,6 @@
 
     return self;
 }
-
 
 - (long)min:(long)a and:(long)b; {
     return (a) < (b) ? (a) : (b);

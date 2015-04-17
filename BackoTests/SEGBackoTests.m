@@ -38,22 +38,32 @@
     [super tearDown];
 }
 
-- (void)testBackoff {
-    SEGBacko *backo = [SEGBacko createWithBuilder:^(SEGBackoBuilder *configuration) {
-        configuration.base = 100;
-        configuration.factor = 2;
-        configuration.jitter = 0;
-        configuration.cap = 800;
-    }];
+- (void)testDefaults {
+    SEGBacko *backo = [SEGBacko create];
 
     XCTAssertEqual([backo backoff:0], 100);
     XCTAssertEqual([backo backoff:1], 200);
     XCTAssertEqual([backo backoff:2], 400);
     XCTAssertEqual([backo backoff:3], 800);
-    XCTAssertEqual([backo backoff:4], 800);
+    XCTAssertEqual([backo backoff:4], 1600);
 
     XCTAssertEqual([backo backoff:0], 100);
     XCTAssertEqual([backo backoff:1], 200);
+}
+
+- (void)testCustomBackoff {
+    SEGBacko *backo = [SEGBacko createWithBuilder:^(SEGBackoBuilder *configuration) {
+        configuration.base = 100;
+        configuration.factor = 3;
+        configuration.jitter = 0;
+        configuration.cap = 2700;
+    }];
+
+    XCTAssertEqual([backo backoff:0], 100);
+    XCTAssertEqual([backo backoff:1], 300);
+    XCTAssertEqual([backo backoff:2], 900);
+    XCTAssertEqual([backo backoff:3], 2700);
+    XCTAssertEqual([backo backoff:4], 2700);
 }
 
 @end

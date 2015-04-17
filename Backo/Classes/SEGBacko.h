@@ -29,6 +29,20 @@ FOUNDATION_EXPORT double BackoVersionNumber;
 //! Project version string for Backo.
 FOUNDATION_EXPORT const unsigned char BackoVersionString[];
 
+/**
+* Backo implements the "full jitter" backoff policy as described in this article <a
+* href="http://www.awsarchitectureblog.com/2015/03/backoff.html">Exponential Backoff And
+* Jitter </a>.
+* <p>
+* Create your own instance with the SEGBackoBuilder class. Instances of backoff are stateless, so
+* you can create them once and share them across threads throughout your app.
+* <p>
+* @see SEGBackoBuilder clas
+*
+* @see <a href="http://www.awsarchitectureblog.com/2015/03/backoff.html">Exponential Backoff And
+* Jitter
+* </a>
+*/
 @interface SEGBacko : NSObject
 
 @property(readonly) long base;
@@ -38,6 +52,9 @@ FOUNDATION_EXPORT const unsigned char BackoVersionString[];
 
 + (instancetype)createWithBuilder:(SEGBackoBuilderBlock)block;
 
++ (instancetype)create;
+
+/** Return the duration (in milliseconds) for which you should backoff. */
 - (long)backoff:(int)attempt;
 
 @end

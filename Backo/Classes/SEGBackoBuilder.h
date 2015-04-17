@@ -22,6 +22,7 @@
 
 #import <Foundation/Foundation.h>
 
+/** Fluent API to construct instances of SEGBacko. */
 @class SEGBackoBuilder;
 
 typedef void(^SEGBackoBuilderBlock)(SEGBackoBuilder *builder);

@@ -36,6 +36,10 @@
 
     self = [super init];
     if (self) {
+        _base = 100;
+        _factor = 2;
+        _jitter = 0;
+        _cap = LONG_MAX;
         block(self);
     }
 
