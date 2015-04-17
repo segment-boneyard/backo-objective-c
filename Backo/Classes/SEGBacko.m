@@ -48,18 +48,23 @@
     return self;
 }
 
-- (long)min:(long)a and:(long)b; {
-    return (a) < (b) ? (a) : (b);
+long max(long x, long y) {
+    return x > y ? x : y;
 }
 
-- (long)max:(long)a and:(long)b; {
-    return (a) > (b) ? (a) : (b);
+long min(long x, long y) {
+    return x < y ? x : y;
+}
+
+double randomDouble() {
+    return floor(((double) arc4random() / ARC4RANDOM_MAX) * 100.0f);
 }
 
 - (long)backoff:(int)attempt; {
     long duration = _base * (long) pow(_factor, attempt);
+
     if (_jitter != 0) {
-        double random = floor(((double) arc4random() / ARC4RANDOM_MAX) * 100.0f);
+        double random = randomDouble();
 
         int deviation = (int) floor(random * _jitter * duration);
         if ((((int) floor(random * 10)) & 1) == 0) {
@@ -68,11 +73,12 @@
             duration = duration + deviation;
         }
     }
+
     if (duration < 0) {
         duration = LONG_MAX;
     }
 
-    return [self min:[self max:duration and:_base] and:_cap];
+    return min(max(duration, _base), _cap);
 }
 
 @end
