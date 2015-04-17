@@ -66,4 +66,19 @@
     XCTAssertEqual([backo backoff:4], 2700);
 }
 
+- (void)testJitter {
+    SEGBacko *backo = [SEGBacko createWithBuilder:^(SEGBackoBuilder *configuration) {
+        configuration.base = 100;
+        configuration.factor = 3;
+        configuration.jitter = 1;
+        configuration.cap = 2700;
+    }];
+
+    XCTAssertNotEqual([backo backoff:0], 100);
+    XCTAssertNotEqual([backo backoff:1], 300);
+    XCTAssertNotEqual([backo backoff:2], 900);
+    XCTAssertEqual([backo backoff:3], 2700);
+    XCTAssertEqual([backo backoff:4], 2700);
+}
+
 @end
