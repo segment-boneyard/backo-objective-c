@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E1F39781AE08DC50032EF70 /* Backo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E1F396C1AE08DC50032EF70 /* Backo.framework */; };
+		6E1F397F1AE08DC50032EF70 /* SEGBackoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F397E1AE08DC50032EF70 /* SEGBackoTests.m */; };
+		6E1F398A1AE08DF20032EF70 /* SEGBacko.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1F39881AE08DF20032EF70 /* SEGBacko.h */; };
+		6E1F398B1AE08DF20032EF70 /* SEGBacko.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F39891AE08DF20032EF70 /* SEGBacko.m */; };
+		6E1F398E1AE08FBF0032EF70 /* SEGBackoBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1F398C1AE08FBF0032EF70 /* SEGBackoBuilder.h */; };
+		6E1F398F1AE08FBF0032EF70 /* SEGBackoBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1F398D1AE08FBF0032EF70 /* SEGBackoBuilder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E1F39791AE08DC50032EF70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E1F39631AE08DC50032EF70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E1F396B1AE08DC50032EF70;
+			remoteInfo = Backo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E1F396C1AE08DC50032EF70 /* Backo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Backo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1F39701AE08DC50032EF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E1F39771AE08DC50032EF70 /* BackoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E1F397D1AE08DC50032EF70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E1F397E1AE08DC50032EF70 /* SEGBackoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEGBackoTests.m; sourceTree = "<group>"; };
+		6E1F39881AE08DF20032EF70 /* SEGBacko.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGBacko.h; sourceTree = "<group>"; };
+		6E1F39891AE08DF20032EF70 /* SEGBacko.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGBacko.m; sourceTree = "<group>"; };
+		6E1F398C1AE08FBF0032EF70 /* SEGBackoBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SEGBackoBuilder.h; sourceTree = "<group>"; };
+		6E1F398D1AE08FBF0032EF70 /* SEGBackoBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SEGBackoBuilder.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E1F39681AE08DC50032EF70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F39741AE08DC50032EF70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F39781AE08DC50032EF70 /* Backo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E1F39621AE08DC50032EF70 = {
+			isa = PBXGroup;
+			children = (
+				6E1F396E1AE08DC50032EF70 /* Backo */,
+				6E1F397B1AE08DC50032EF70 /* BackoTests */,
+				6E1F396D1AE08DC50032EF70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E1F396D1AE08DC50032EF70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F396C1AE08DC50032EF70 /* Backo.framework */,
+				6E1F39771AE08DC50032EF70 /* BackoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E1F396E1AE08DC50032EF70 /* Backo */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F396F1AE08DC50032EF70 /* Supporting Files */,
+				6E1F39881AE08DF20032EF70 /* SEGBacko.h */,
+				6E1F39891AE08DF20032EF70 /* SEGBacko.m */,
+				6E1F398C1AE08FBF0032EF70 /* SEGBackoBuilder.h */,
+				6E1F398D1AE08FBF0032EF70 /* SEGBackoBuilder.m */,
+			);
+			path = Backo;
+			sourceTree = "<group>";
+		};
+		6E1F396F1AE08DC50032EF70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F39701AE08DC50032EF70 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E1F397B1AE08DC50032EF70 /* BackoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F397E1AE08DC50032EF70 /* SEGBackoTests.m */,
+				6E1F397C1AE08DC50032EF70 /* Supporting Files */,
+			);
+			path = BackoTests;
+			sourceTree = "<group>";
+		};
+		6E1F397C1AE08DC50032EF70 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E1F397D1AE08DC50032EF70 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6E1F39691AE08DC50032EF70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F398A1AE08DF20032EF70 /* SEGBacko.h in Headers */,
+				6E1F398E1AE08FBF0032EF70 /* SEGBackoBuilder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6E1F396B1AE08DC50032EF70 /* Backo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1F39821AE08DC50032EF70 /* Build configuration list for PBXNativeTarget "Backo" */;
+			buildPhases = (
+				6E1F39671AE08DC50032EF70 /* Sources */,
+				6E1F39681AE08DC50032EF70 /* Frameworks */,
+				6E1F39691AE08DC50032EF70 /* Headers */,
+				6E1F396A1AE08DC50032EF70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Backo;
+			productName = Backo;
+			productReference = 6E1F396C1AE08DC50032EF70 /* Backo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E1F39761AE08DC50032EF70 /* BackoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1F39851AE08DC50032EF70 /* Build configuration list for PBXNativeTarget "BackoTests" */;
+			buildPhases = (
+				6E1F39731AE08DC50032EF70 /* Sources */,
+				6E1F39741AE08DC50032EF70 /* Frameworks */,
+				6E1F39751AE08DC50032EF70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E1F397A1AE08DC50032EF70 /* PBXTargetDependency */,
+			);
+			name = BackoTests;
+			productName = BackoTests;
+			productReference = 6E1F39771AE08DC50032EF70 /* BackoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E1F39631AE08DC50032EF70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Segment;
+				TargetAttributes = {
+					6E1F396B1AE08DC50032EF70 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					6E1F39761AE08DC50032EF70 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = 6E1F39661AE08DC50032EF70 /* Build configuration list for PBXProject "Backo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6E1F39621AE08DC50032EF70;
+			productRefGroup = 6E1F396D1AE08DC50032EF70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E1F396B1AE08DC50032EF70 /* Backo */,
+				6E1F39761AE08DC50032EF70 /* BackoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E1F396A1AE08DC50032EF70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F39751AE08DC50032EF70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E1F39671AE08DC50032EF70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F398B1AE08DF20032EF70 /* SEGBacko.m in Sources */,
+				6E1F398F1AE08FBF0032EF70 /* SEGBackoBuilder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1F39731AE08DC50032EF70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1F397F1AE08DC50032EF70 /* SEGBackoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E1F397A1AE08DC50032EF70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E1F396B1AE08DC50032EF70 /* Backo */;
+			targetProxy = 6E1F39791AE08DC50032EF70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6E1F39801AE08DC50032EF70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E1F39811AE08DC50032EF70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E1F39831AE08DC50032EF70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Backo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6E1F39841AE08DC50032EF70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Backo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6E1F39861AE08DC50032EF70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BackoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6E1F39871AE08DC50032EF70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BackoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E1F39661AE08DC50032EF70 /* Build configuration list for PBXProject "Backo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F39801AE08DC50032EF70 /* Debug */,
+				6E1F39811AE08DC50032EF70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1F39821AE08DC50032EF70 /* Build configuration list for PBXNativeTarget "Backo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F39831AE08DC50032EF70 /* Debug */,
+				6E1F39841AE08DC50032EF70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1F39851AE08DC50032EF70 /* Build configuration list for PBXNativeTarget "BackoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E1F39861AE08DC50032EF70 /* Debug */,
+				6E1F39871AE08DC50032EF70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E1F39631AE08DC50032EF70 /* Project object */;
+}
