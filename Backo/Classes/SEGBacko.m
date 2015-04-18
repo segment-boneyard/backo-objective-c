@@ -81,4 +81,8 @@ double randomDouble() {
     return min(max(duration, _base), _cap);
 }
 
+- (void)sleep:(int)attempt; {
+    [NSThread sleepForTimeInterval:[self backoff:attempt]];
+}
+
 @end

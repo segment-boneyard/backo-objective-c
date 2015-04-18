@@ -67,6 +67,8 @@
 }
 
 - (void)testJitter {
+    // Use the same values as testCustomBackoff. We've verified that not having jitter
+    // returns the right values, so changing jitter (and jitter only)
     SEGBacko *backo = [SEGBacko createWithBuilder:^(SEGBackoBuilder *configuration) {
         configuration.base = 100;
         configuration.factor = 3;
@@ -79,6 +81,16 @@
     XCTAssertNotEqual([backo backoff:2], 900);
     XCTAssertEqual([backo backoff:3], 2700);
     XCTAssertEqual([backo backoff:4], 2700);
+}
+
+- (void)sleep {
+    SEGBacko *backo = [SEGBacko create];
+
+    NSDate *start = [NSDate date];
+    [backo sleep:1];
+    NSTimeInterval timeInterval = [start timeIntervalSinceNow];
+
+    XCTAssertTrue(timeInterval >= 300 && timeInterval <= 350);
 }
 
 @end

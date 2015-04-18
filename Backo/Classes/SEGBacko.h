@@ -57,4 +57,7 @@ FOUNDATION_EXPORT const unsigned char BackoVersionString[];
 /** Return the duration (in milliseconds) for which you should backoff. */
 - (long)backoff:(int)attempt;
 
+/** Sleep on the current thread for the duration returned by backoff. */
+- (void)sleep:(int)attempt;
+
 @end
