@@ -88,7 +88,6 @@
 			children = (
 				6E1F39701AE08DC50032EF70 /* Info.plist */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -106,7 +105,6 @@
 			children = (
 				6E1F397D1AE08DC50032EF70 /* Info.plist */,
 			);
-			name = "Supporting Files";
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
@@ -118,7 +116,6 @@
 				6E1F398C1AE08FBF0032EF70 /* SEGBackoBuilder.h */,
 				6E1F398D1AE08FBF0032EF70 /* SEGBackoBuilder.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -200,8 +197,6 @@
 			mainGroup = 6E1F39621AE08DC50032EF70;
 			productRefGroup = 6E1F396D1AE08DC50032EF70 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				6E1F396B1AE08DC50032EF70 /* Backo */,
