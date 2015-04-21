@@ -16,7 +16,10 @@ SEGBacko *backo = [SEGBacko createWithBuilder:^(SEGBackoBuilder *builder) {
 
 for (int i = 0; i < N; i++) {
   [self doWork];
-  [NSThread sleepForTimeInterval:[backo backoff:i]];
+  // Sleep
+  [backo sleep];
+  // Or sleep manually
+  // [NSThread sleepForTimeInterval:[backo backoff:i]];
 }
 ```
 
